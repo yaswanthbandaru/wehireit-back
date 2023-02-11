@@ -1,8 +1,14 @@
 # WeHieIt
 
+```
+Everyday is a learning day
+```
+
+## Description
+
 Working on the project
 
-Tasks
+## Tasks
 
 -> Model Schema buildup
 
