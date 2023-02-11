@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/yaswanthbandaru/wehireit-back.git"
   },
-  "keywords": ["backend", "mongodb"],
+  "keywords": [
+    "backend",
+    "mongodb"
+  ],
   "author": "Bandaru Yaswanth",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yaswanthbandaru/wehireit-back/issues"
   },
-  "homepage": "https://github.com/yaswanthbandaru/wehireit-back#readme"
+  "homepage": "https://github.com/yaswanthbandaru/wehireit-back#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
