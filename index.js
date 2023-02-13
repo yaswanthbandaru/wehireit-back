@@ -1,8 +1,25 @@
 let express = require('express');
-let app = express();
-
-
+let mongoose = require('mongoose');
+require('dotenv').config();
 var port = 3000;
+
+mongoose.set("strictQuery", false);
+
+mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+mongoose.connection.on('connected', ()=> {
+    console.log('Connected to MongoDB cluster');
+});
+
+mongoose.connection.on('error', (error) => {
+    console.log(`MongoDB connection error: ${error}`);
+});
+
+
+let app = express();
 
 app.get('/', function(req, res){
     res.send("Hello yaswanth & connected to internet");
