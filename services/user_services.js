@@ -2,6 +2,11 @@ const { default: mongoose } = require('mongoose');
 const { UserModel } = require("../models/userSchema");
 
 // create User
+const createUser = async (userdata) => {
+    const user = await UserModel.create({name: userdata.name, email: userdata.email, password: userdata.password})
+    const userData = await user.save();
+    return userData;
+}
 
 // update User
 const updateUser = async (newdata) => {

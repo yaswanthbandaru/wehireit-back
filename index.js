@@ -5,6 +5,7 @@ var port = 3000;
 
 // import models
 const { UserModel } = require("./models/userSchema");
+const QuizModel = require("./models/questionsSchema");
 
 
 // Mongoose connection
