@@ -3,6 +3,10 @@ const { UserModel } = require("../models/userSchema");
 
 // create User
 const createUser = async (userdata) => {
+    if(!userdata || !userdata.name || !userdata.email || !userdata.password) {
+        throw new Error('Invalid user data');
+    }
+
     const user = await UserModel.create({name: userdata.name, email: userdata.email, password: userdata.password})
     const userData = await user.save();
     return userData;
@@ -31,4 +35,4 @@ const deleteUser = async (userId) => {
 }
 
 // export services
-module.exports = { getUser };
+module.exports = { createUser, getUser, updateUser };
