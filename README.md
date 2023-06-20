@@ -10,8 +10,8 @@ Working on the project
 
 ## Tasks
 
--> Model Schema buildup
+- [x] Model Schema buildup
 
--> MongoDB connection
+- [x] MongoDB connection
 
--> postman testing
+- [x] postman testing
