@@ -20,25 +20,5 @@ userRouter.put('/', async (req, res) => {
     res.json(response);
 })
 
-// userRouter.post('/login', (req, res) => {
-    
-//     // Extract username and password from the request body
-//     const { username, password } = req.body;
 
-//     // Validate the credentials (e.g., check aganist the database)
-//     if (isValidCredentials(username, password)) {
-//         // Generate a JWT token using the 'jsonwebtoken' library
-//         const token = generateToken(username);
-
-//         // Send the JWT as the response
-//         res.json({ token });
-//     } else {
-//         // If The credentials are invalid, send an error response
-//         res.status(401).json({ error: 'Invalid credentials' });
-//     } // 63ea7d6012913d71cb2e17f2
-
-//     // res.json({ message: 'Login page'});
-//     // res.send(req.body);
-// })
-// // export your router
 module.exports = userRouter;
