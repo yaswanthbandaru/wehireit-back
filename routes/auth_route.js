@@ -75,8 +75,9 @@ authRoute.post('/login', async (req, res) => {
 
             // return the user
             res.status(200).json(user);
+        } else {
+            res.status(400).send("Invalid Credentials");
         }
-        res.status(400).send("Invalid Credentials");
 
     } catch (err) {
         console.log(err);
